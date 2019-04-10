@@ -8,7 +8,7 @@
 ////////////////////////////////////////////////
 // SEARCH
 .search {
-    flex: 0 0 40%;
+    flex: 0 0 40%; //grow, shrink, basis 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,6 +76,7 @@
     & > *:hover {
         background-color: var(--color-grey-light-2);
     }
+    //^ user-nav > all the direct childern 
     &__icon-box {
         position: relative;
 
@@ -115,4 +116,32 @@
     &__user-name {
 
     }
+}
+
+//////////////////////////////////////////////////////////////////
+// SIDE NAVIGATION 
+
+.side-nav {
+    dis
+    &__item {
+
+    }
+
+    &__link {
+
+    }
+
+    &__icon {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////
+// LEGAL
+.legal {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2.5rem;
+    color: var(--color-grey-light-4);
 }
