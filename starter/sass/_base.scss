@@ -26,6 +26,12 @@ v
 
 }
 
+///////////////////////////////////////////////////////////
+// Break-points
+$bp-largest: 75em; //1200px 1200/16 = 75
+$bp-large: 68.75em; //1100px 1100/16 = 75
+$bp-medium: 56.25em; //900px 900/16 = 75
+
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +47,10 @@ v
 html{ 
     box-sizing: border-box;
     font-size: 62.5%; // 1 rem = 10px;. 10px/16px = 62/5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
 }
 
 body {
